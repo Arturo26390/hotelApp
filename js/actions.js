@@ -7,6 +7,7 @@ var fn =
 
 	init: function()
 	{
+		alert("hola");
 		/*
 		En esta seccion vamos a ascociar todos los eventos del "Click" al HTML
 		*/
@@ -82,11 +83,12 @@ var fn =
 
 /* LLAMAR AL METODO INIT
 EN EL NAVEGADOR
-fn.init(); 
-*/
+fn.init(); */
+
 
 /*
 	PARA COMPILAR
-*/
 
-$(fn.deviceready);
+
+$(fn.deviceready);*/
+fn.deviceready();
