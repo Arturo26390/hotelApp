@@ -91,4 +91,4 @@ fn.init(); */
 
 
 $(fn.deviceready);*/
-fn.deviceready();
+fn.deviceready(init());
