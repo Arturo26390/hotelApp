@@ -39,6 +39,9 @@ var fn =
 			if(email == ""){
 				throw new Error("Email forzozo")
 			}
+			if(tel == ""){
+				throw new Error("Telefono forzozo")
+			}
 			if(email.indexOf("@") == -1){
 				throw new Error("Debe contener arroba");
 			}
@@ -58,6 +61,7 @@ var fn =
 		}
 	},
 	enviarRegistro: function(nombreR,emailR,telR,passwordR,fotoR){
+		alert("Enviando datos");
 		$.ajax({
 			  method: "POST",
 			  url: "http://www.colors.edu.mx/archivoTest.php",
@@ -68,6 +72,7 @@ var fn =
 			  		}
 
 			}).done(function( mensaje ) {
+				alert("Datos enviados");
 			   		if(mensaje == 1)
 			   		{
 			   			/*
