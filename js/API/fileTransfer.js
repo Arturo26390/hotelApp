@@ -13,13 +13,12 @@ var file = {
 
 	transferir: function(fileURL){
 		alert("transferir");
-		/*
-		Opciones de envio
-		*/
+		
 		var options = new FileUploadOptions();
 		options.fileKey="foto";
 		options.fileName="miFoto";
 		options.mimeType="image/jpeg";
+		options.chunkedMode = false;
 		options.headers ={
 			Connection: "close";
 		}
