@@ -80,7 +80,7 @@ var fn =
 			   			/*
 						Transferimos la foto
 			   			*/
-			   			var fotoUrl = fotoR.src;
+			   			var fotoUrl = $(fotoR).attr("src");
 			   			file.transferir(fotoUrl);
 			   		}
 			   		else
