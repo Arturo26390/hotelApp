@@ -20,7 +20,7 @@ var file = {
 		options.mimeType="image/jpeg";
 		options.chunkedMode = false;
 		options.headers ={
-			Connection: "close";
+			Connection: "close"
 		}
 
 		var ft = new FileTransfer();
