@@ -12,7 +12,7 @@ var fn =
 		En esta seccion vamos a ascociar todos los eventos del "Click" al HTML
 		*/
 		$("#botonRegistrar").tap(fn.registrar);
-		$("·botonTomarFoto").tap(mc.abrirCamara);
+		$("#botonTomarFoto").tap(mc.abrirCamara);
 	},
 	registrar: function()
 	{
