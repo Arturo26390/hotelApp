@@ -4,7 +4,7 @@ var mc =
 	{
 		var path = mediaFiles[0].fullPath;
 		$("#fotoTomadaRegistro").html('<img src="'+path+'">');
-		alert(path);
+		//alert(path);
 	},
 
 	error: function()

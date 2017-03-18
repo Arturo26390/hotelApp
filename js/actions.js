@@ -62,7 +62,7 @@ var fn =
 	},
 	enviarRegistro: function(nombreR,emailR,telR,passwordR,fotoR){
 		alert("Enviando datos");
-		alert(nombreR + emailR + telR + passwordR + fotoR);
+		//alert(nombreR + emailR + telR + passwordR + fotoR);
 		$.ajax({
 			  method: "POST",
 			  url: "http://www.colors.edu.mx/archivoTest.php",
@@ -81,7 +81,7 @@ var fn =
 						Transferimos la foto
 			   			*/
 			   			var fotoUrl = fotoR.src;
-			   			file.transferir();
+			   			file.transferir(fotoUrl);
 			   		}
 			   		else
 			   		{

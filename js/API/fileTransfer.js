@@ -11,7 +11,7 @@ var file = {
 	},
 
 	transferir: function(fileURL){
-
+		alert("transferir");
 		/*
 		Opciones de envio
 		*/
