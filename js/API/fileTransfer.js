@@ -1,10 +1,12 @@
 var file = {
 	exito: function(){
+		alert("exito");
 		window.localStorage.setItem("nombreUsuario", $("#nombreRegistro").val());
 		window.location.href="#home";
 	},
 
-	error: function(){
+	error: function(error){
+		alert(error);
 		alert("Error al enviar foto al servidor");
 	},
 
