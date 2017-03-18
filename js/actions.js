@@ -74,6 +74,7 @@ var fn =
 
 			}).done(function( mensaje ) {
 				alert("Datos enviados");
+				alert(mensaje);
 			   		if(mensaje == 1)
 			   		{
 			   			/*
