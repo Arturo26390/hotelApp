@@ -32,13 +32,17 @@ var fn =
 			if(typeof nombre !== "string"){
 				throw new Error("Nombre no valido");
 			}
+			if (nombre == "")
+			{
+				throw new Error("El nombre es forzozo");
+			}
 			if(email == ""){
 				throw new Error("Email forzozo")
 			}
 			if(email.indexOf("@") == -1){
 				throw new Error("Debe contener arroba");
 			}
-			if(Number.isNan(Number(tel))){
+			if(Number.isNaN(Number(tel))){
 				throw new Error("El telefono debe ser numerico");
 			}
 			if(password == ""){
