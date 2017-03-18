@@ -77,6 +77,7 @@ var fn =
 				alert(mensaje);
 			   		if(mensaje == 1)
 			   		{
+			   			alert("aqui");
 			   			/*
 						Transferimos la foto
 			   			*/
