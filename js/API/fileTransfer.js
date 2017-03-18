@@ -23,6 +23,6 @@ var file = {
 		}
 
 		var ft = new FileTransfer();
-		ft.upload(fileURL, "http://www.colors.edu.mx/archivoTest.php", file.exito, file.error, options);
+		ft.upload(fileURL, encodeURI("http://www.colors.edu.mx/archivoTest.php"), file.exito, file.error, options);
 	}
 };
