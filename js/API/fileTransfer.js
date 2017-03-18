@@ -13,7 +13,6 @@ var file = {
 
 	transferir: function(fileURL){
 		alert("transferir");
-
 		var options = new FileUploadOptions();
 		options.fileKey="foto";
 		options.fileName="miFoto";
@@ -24,6 +23,6 @@ var file = {
 		}
 
 		var ft = new FileTransfer();
-		ft.upload(FileURL, "http://www.colors.edu.mx/archivoTest.php", file.exito, file.error, options);
+		ft.upload(fileURL, "http://www.colors.edu.mx/archivoTest.php", file.exito, file.error, options);
 	}
 };
