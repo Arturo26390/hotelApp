@@ -83,7 +83,7 @@
 		<div class="ui-content">
 		 	<ul data-role="listview">
 		 		<li>
-					<a href="#nuevaReserva" >Nueva Reserva</a>
+					<a href="#reserva1">Nueva Reserva</a>
 				</li>
 				<li>
 					<a href="#historial">Historial de Reservas</a>
@@ -101,15 +101,88 @@
 					<a href="#terminos">Terminos y condiciones</a>
 				</li>
 
-				
+
 		 	</ul>
 		</div>
 		<div data-role="footer" data-position="fixed">
 		<span>&copy; 2017. Todos Los Derechos Reservados Arturo Navarrete</span>
 		<a href="#nosotros">Nosotros</a>
-			
 		</div>	
 	</div>
+
+
+	<div id="reserva1" data-role="page">
+		<div data-role="header">
+			<h1>Reservacion</h1>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					Selecciona el tipo de habitacion
+				</li>
+				<li><a href="#">Sencilla</a></li>
+				<li><a href="#">Doble</a></li>
+				<li><a href="#">Suite</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position=fixed"">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-rel="back">Cancelar</a></li>
+					<li><a href="#" class="ui-btn-active">Siguiente</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+
+	<div id="reserva2" data-role="page">
+		<div data-role="header">
+			<h1>Reservacion</h1>
+			<a href="#" data-rel="back">Atras</a>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					Selecciona datos extras
+				</li>
+				<li>
+					Numero de personas
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>		
+				</li>
+				<li>
+					Numero de dias
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</li>
+				<li>
+					Numero de habitaciones
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</li>	
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active">Reservar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>

@@ -3,7 +3,7 @@ var mc =
 	exito: function(mediaFiles)
 	{
 		var path = mediaFiles[0].fullPath;
-		$("#fotoTomadaRegistro").html('<img src="/storage/emulated/0/DCIM/Camera/20170318_111132_HDR.jpg">');
+		$("#fotoTomadaRegistro").html('<img src="'+path+'">');
 		//alert(path);
 	},
 
