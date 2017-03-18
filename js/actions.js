@@ -7,7 +7,6 @@ var fn =
 
 	init: function()
 	{
-		alert("hola");
 		/*
 		En esta seccion vamos a ascociar todos los eventos del "Click" al HTML
 		*/
