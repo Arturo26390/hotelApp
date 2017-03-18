@@ -2,7 +2,7 @@ var mc =
 {
 	exito: function(mediaFiles)
 	{
-		var path = mediaFiles[0].fullPath;
+		var path = mediaFiles[0].localURL;
 		$("#fotoTomadaRegistro").html('<img src="'+path+'">');
 		//alert(path);
 	},
