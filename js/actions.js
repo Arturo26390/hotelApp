@@ -85,7 +85,8 @@ var fn =
 			   		{
 			   			alert("Error al enviar datos de registro");
 			   		}
-			  });
+			  }).fail(function error){
+				alert(error)};
 	}
 }
 
