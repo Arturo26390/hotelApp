@@ -85,8 +85,11 @@ var fn =
 			   		{
 			   			alert("Error al enviar datos de registro");
 			   		}
-			  }).fail(function error){
-				alert(error)};
+			  }).fail(function (error){
+				alert(error.status);
+				alert(error.message);
+				alert(error.responseText);
+			});
 	}
 }
 
