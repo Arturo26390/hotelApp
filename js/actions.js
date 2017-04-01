@@ -12,6 +12,11 @@ var fn =
 		*/
 		$("#botonRegistrar").tap(fn.registrar);
 		$("#botonTomarFoto").tap(mc.abrirCamara);
+		$(".tipoHabitacion").tap();
+	},
+	seleccionarTipoDeHabitacion: function()
+	{
+
 	},
 	registrar: function()
 	{
