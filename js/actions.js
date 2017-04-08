@@ -298,12 +298,12 @@ var fn =
 
 /* LLAMAR AL METODO INIT
 EN EL NAVEGADOR*/
-fn.init(); 
+//fn.init(); 
 
 
 /*
-	PARA COMPILAR
+	PARA COMPILAR*/
 
 
-$(fn.deviceready);*/
+$(fn.deviceready);
 //fn.deviceready();
