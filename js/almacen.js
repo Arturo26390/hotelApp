@@ -181,7 +181,7 @@ alert("Transaccion usuario");
 			}
 		}
 
-		$("#listaReservasP").html(resultado);
+		$("#listaReservasPendientes").html(resultado);
 	},
 
 	sincronizarPendientes: function(){

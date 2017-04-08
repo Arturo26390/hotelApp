@@ -18,8 +18,61 @@ var fn =
 		$("#reserva2 .reservar").tap(fn.realizarReservacion);
 		$("#botonCerrarSesion").tap(fn.cerrarSesion);
 		$("#botonInicioSesion").tap(fn.iniciarSesion);
+		$("#botonHistorial").tap(fn.mostrarHistorial);
+		$("#botonReservasPendientes").tap(fn.mostrarReservasPendientes);
+		$("#botonGaleria").tap(fn.mostrarGaleria);
+		
+		$("#gallery").on('tap', 'img', fn.mostrarPopUp);
 
 	},
+	mostrarPopUp : function()
+	{
+		var ruta = $(this).attr("src");
+		$("#popupGaleria").popup("open");
+		$("#popupfoto img").attr("src" , ruta);
+	},
+
+	mostrarGaleria : function()
+	{
+		$.ajax({
+			method: "GET",
+			url: "http://www.colors.edu.mx/images.json"
+		}).done(function(data){
+			/*
+			Iniciar Galeria
+			*/
+			$("#gallery").html("");
+			var texto= "";
+			var contador=1;
+			/*
+			Recorrer arreglo de imagenes
+			*/
+			data.images.forEach(function(image){
+				//console.log(image);
+				if(contador % 2 == 0)
+				{
+					texto += "<div class='ui-block-a'><img src='img/galeria/"+image.imageName+".jpg'></div>";
+				}
+				else
+				{
+					texto += "<div class='ui-block-b'><img src='img/galeria/"+image.imageName+".jpg'></div>";	
+				}
+				contador=contador++;
+				$("#gallery").html(texto);
+			})
+		})
+	},
+
+	mostrarHistorial : function()
+	{
+		almacen.cargarDatosHistorial();
+	},
+
+	mostrarReservasPendientes : function()
+	{
+		almacen.cargarDatosReservasP();
+	},
+
 	iniciarSesion: function()
 	{
 		var pass 		= $("#passwordSesion").val();

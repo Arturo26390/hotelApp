@@ -95,7 +95,7 @@
 					<a href="#ubicacion">Ubicacion</a>
 				</li>
 				<li>
-					<a href="#galeria">Galeria</a>
+					<a href="#galeria" id="botonGaleria">Galeria</a>
 				</li>
 				<li>
 					<a href="#terminos">Terminos y condiciones</a>
@@ -188,7 +188,7 @@
 				<a href="#" data-rel="back">Atras</a>
 		</div>
 		<div class="ui-content">
-			<table>
+			<table class="informacion">
 				<thead>
 					<tr>
 						<th>Tipo de habitacion</th>
@@ -209,7 +209,7 @@
 				<a href="#" data-rel="back">Atras</a>
 		</div>
 		<div class="ui-content">
-			<table>
+			<table class="informacion">
 				<thead>
 					<tr>
 						<th>Tipo de habitacion</th>
@@ -221,6 +221,34 @@
 				<tbody id="listaReservasPendientes">
 				</tbody>
 			</table>	
+		</div>
+	</div>
+
+	<div id="ubicacion" data-role="page">
+		<div data-role="header">
+			<h1>Ubicacion</h1>
+			<a href="#" data-rel="back">Atras</a>
+		</div><a href="#" data-rel="back">Atras</a>
+		<div class="mapa">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15085.069295348429!2d-98.22476072485352!3d19.05198069267989!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1491663273839" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div id="galeria" data-role="page">
+		<div data-role="header">
+			<h1>Galeria</h1>
+			<a href="#" data-rel="back">Atras</a>
+		</div>
+		<div class="ui-content">
+			<div id="gallery" class="ui-grid-a">
+
+			</div>
+		</div>
+		<div id="popupGaleria" data-role="popup">
+			<a href="#" data-rel="back">Close</a>
+			<div id="popupfoto" class="ui-content">
+				<img src="">
+			</div>
 		</div>
 	</div>
 
